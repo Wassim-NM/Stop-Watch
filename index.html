@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Stop Watch</title>
+    <title>Stop Watch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Stop Watch</h1>
-        <p id="time"><span id="second">00</span>:<span id="tens">00</span></p>
-        <button id="btn-start">Start</button>
-        <button id="btn-stop">Stop</button>
-        <button id="btn-reset">Reset</button>
+    <div class="holder">
+        <div class="watch_container">
+            <h1>Stop Watch</h1>
+            <h2>Curent Year : <span id="curent_year">2024</span></h2>
+            <p id="time"><span id="year" class="element">00</span><span class="info">y</span>:<span id="day" class="element">00</span><span class="info">d</span>:<span id="hour" class="element">00</span><span class="info">h</span>:<span id="minutes" class="element">00</span><span class="info">m</span>:<span id="second" class="element">00</span><span class="info">s</span>:<span id="tens" class="element">00</span><span class="info">ms</span></p>
+            <button id="btn-start">Start</button>
+            <button id="btn-stop">Stop</button>
+            <button id="btn-reset">Reset</button>
+        </div>
     </div>
     <script src="index.js"></script>
 </body> 
+</html>

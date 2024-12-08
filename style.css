@@ -1,22 +1,52 @@
-body{
-    margin: 0%;
-    padding: 0%;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.holder{
+    display: flex;
+    align-items: center;
     background: linear-gradient(to right, #AA076B, #61045F);
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 }
-.container{
+
+.watch_container{
     margin: 50px auto;
     text-align: center;
 }
+
 h1{
     font-size: 4em;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffff;
+    margin: 10px;
 }
+
+h2 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+    
+}
+
 #time{
     font-size: 5em;
     color: #ffff;
+    margin: 10px;
 }
+
+.element{
+    height: 89px;
+    width: 120px;
+    margin: auto;
+}
+
+.info {
+    font-size: 0.5em;
+}
+
 button{
     border: none;
     padding: 18px 10px;
@@ -27,6 +57,7 @@ button{
     color: #AA076B;
     font-weight: bold;
 }
+
 button:hover{
     cursor: pointer;
     background-color: transparent;
