@@ -1,14 +1,14 @@
 
-const msec_html = document.getElementById('tens')
+const msec_html = document.getElementById('tens');
 const sec_html = document.getElementById('second');
 const min_html = document.getElementById('minutes');
-const hour_html = document.getElementById('hour')
-const day_html = document.getElementById('day')
-const year_html = document.getElementById('year')
-const curent_year_html = document.getElementById('curent_year')
-const start_btn = document.getElementById('btn-start')
-const stop_btn = document.getElementById('btn-stop')
-const reset_btn = document.getElementById('btn-reset')
+const hour_html = document.getElementById('hour');
+const day_html = document.getElementById('day');
+const year_html = document.getElementById('year');
+const curent_year_html = document.getElementById('curent_year');
+const start_btn = document.getElementById('btn-start');
+const stop_btn = document.getElementById('btn-stop');
+const reset_btn = document.getElementById('btn-reset');
 
 let interval;
 let msec = 0;
@@ -17,17 +17,18 @@ let min = 0;
 let hr = 0;
 let day = 0;
 let year = 0;
-let curent_year = 2024;
+const d = new Date();
+let curent_year = d.getFullYear();
 
 
 start_btn.addEventListener('click', () => {
     clearInterval(interval);
     interval = setInterval(startTimer, 1)
-})
+});
 
 stop_btn.addEventListener('click', () => {
     clearInterval(interval);
-})
+});
 
 reset_btn.addEventListener('click', () => {
     clearInterval(interval);
@@ -44,8 +45,8 @@ reset_btn.addEventListener('click', () => {
     hr = 0;
     day = 0;
     year = 0;
-    curent_year = 2024;
-})
+    curent_year = curent_year;
+});
 
  
 function startTimer(){
